@@ -9,7 +9,7 @@ Avant de commencer, assurez-vous d'avoir installé [Node.js](https://nodejs.org/
 1. **Cloner le dépôt**  
    Clonez le dépôt sur votre machine locale :
    ```bash
-   git clone https://github.com/username/MonApplication.git
+   git clone git@github.com:BaptisteCouv/exercice_vue.git
    
 2. **Installer les packages**  
    ```bash
