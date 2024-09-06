@@ -2,6 +2,3 @@
   <HomePage />
 </template>
 
-<script setup>
-//
-</script>

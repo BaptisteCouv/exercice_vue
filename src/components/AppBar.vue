@@ -10,9 +10,9 @@
     <v-app-bar-title> {{ useStore.titleApp }} </v-app-bar-title>
     <template v-slot:append>
       <div class="d-flex">
-        <v-btn variant="outlined" class="btn-header"> Exercice 1</v-btn>
-        <v-btn variant="outlined" class="btn-header"> Exercice 2</v-btn>
-        <v-btn variant="outlined" class="btn-header"> Exercice 3</v-btn>
+        <v-btn variant="outlined" class="btn-header" @click="$router.push('/store')"> Exercice 1</v-btn>
+        <v-btn variant="outlined" class="btn-header" disabled> Exercice 2</v-btn>
+        <v-btn variant="outlined" class="btn-header" disabled> Exercice 3</v-btn>
       </div>
     </template>
   </v-app-bar>
