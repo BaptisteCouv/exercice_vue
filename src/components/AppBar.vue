@@ -1,32 +1,54 @@
 <template>
   <v-app-bar :elevation="2">
-    <template v-slot:prepend>
-      <v-img
-        class="ml-3"
-        :width="30"
-        src="/src/assets/Pinialogo.svg"
-      ></v-img>
-    </template>
-    <v-app-bar-title> {{ useStore.titleApp }} </v-app-bar-title>
+    <v-app-bar-nav-icon
+      variant="text"
+      @click.stop="drawer = !drawer"
+    ></v-app-bar-nav-icon>
+    <v-app-bar-title @click="$router.push('/')" class="cursor-pointer">
+      {{ store.titleApp }}
+    </v-app-bar-title>
     <template v-slot:append>
-      <div class="d-flex">
-        <v-btn variant="outlined" class="btn-header" @click="$router.push('/store')"> Exercice 1</v-btn>
-        <v-btn variant="outlined" class="btn-header" disabled> Exercice 2</v-btn>
-        <v-btn variant="outlined" class="btn-header" disabled> Exercice 3</v-btn>
-      </div>
+      <v-btn
+        :color="store.isSolutionActive ? 'green' : 'red'"
+        :prepend-icon="
+          store.isSolutionActive
+            ? 'mdi-lightbulb-outline'
+            : 'mdi-lightbulb-off-outline'
+        "
+        variant="outlined"
+        @click="store.changeSolutionActive()"
+      >
+        Solution
+        <v-tooltip activator="parent" location="start">Affiche la solution aux exercices si elle est active</v-tooltip>
+      </v-btn>
     </template>
   </v-app-bar>
+  <v-navigation-drawer
+    v-model="drawer"
+    :location="$vuetify.display.mobile ? 'bottom' : undefined"
+    temporary
+  >
+    <v-list-item
+      prepend-icon="mdi-home"
+      title="Maison"
+      value="home"
+      @click="$router.push('/')"
+    ></v-list-item>
+    <v-list-item
+      prepend-icon="mdi-fruit-pineapple"
+      title="Les stores"
+      value="stores"
+      @click="$router.push('/store')"
+    ></v-list-item>
+  </v-navigation-drawer>
 </template>
-<script>
+
+<script setup>
+import { ref } from "vue";
 import { useStore } from "@/store/index.js";
 
-export default {
-  data() {
-    return {
-      useStore: useStore(),
-    };
-  },
-};
+const store = useStore();
+const drawer = ref(false);
 </script>
 <style scoped>
 .btn-header {

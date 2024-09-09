@@ -12,9 +12,7 @@ export const useStoreInStore = defineStore('storeInStore', {
     addTask(task) {
       this.tasks.push(task);
     },
-    removeTask(index) {
-      console.log(index);
-      
+    removeTask(index) {      
       this.tasks.splice(index, 1);
     },
   },
