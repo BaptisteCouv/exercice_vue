@@ -1,29 +1,23 @@
 <template>
-    <div class="d-flex justify-space-between w-100 pa-3 mb-3 rounded-lg item-list"  v-for="(task, index) in tasks" :key="index">
+    <div class="d-flex justify-space-between w-100 pa-3 mb-3 rounded-lg item-list"  v-for="(task, index) in store.tasks" :key="index">
         <div class="text">
-            {{ task }} 
+            {{ task }}
         </div>
         <button @click="removeTask(index)">
             <v-icon icon="mdi-delete"></v-icon>
         </button>
     </div>
 </template>
-  
-<script>
+
+<script setup>
 import { useStoreInStore } from '@/store/store';
 
-export default {
-    setup() {
-        const taskStore = useStoreInStore();
-        const tasks = taskStore.tasks;
+const store = useStoreInStore();
 
-        const removeTask = (index) => {
-            taskStore.removeTask(index);
-        };
-
-        return { tasks, removeTask };
-    },
+const removeTask = (index) => {
+    store.removeTask(index);
 };
+
 </script>
 <style scoped>
 .item-list {

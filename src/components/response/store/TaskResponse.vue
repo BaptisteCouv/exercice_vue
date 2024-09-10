@@ -1,35 +1,14 @@
 <template>
-    <div class="d-flex w-100">
-      <v-text-field
-        v-model="newTask"
-        class="txt-field"
-        label="Ajouter une tâche"
-        variant="outlined"
-        @keyup.enter="addTask"
-      ></v-text-field>
-      <v-btn icon="mdi-plus" class="ml-4" @click="addTask"></v-btn>
-    </div>
-  </template>
-  
-  <script setup>
-  import { ref } from "vue";
-  import { useStoreInStore } from "@/store/store";
-  
-  const newTask = ref("");
-  const taskStore = useStoreInStore();
-  
-  const addTask = () => {
-    if (newTask.value.trim() !== "") {
-      taskStore.addTask(newTask.value.trim());
-      newTask.value = "";
-    }
-  };
-  
-  </script>
-  
-  <style scoped>
-  .txt-field {
-    width: 250px;
-  }
-  </style>
-  
+    <v-row>
+        <v-col cols="12">
+            <v-alert border="start" color="green-lighten-1" icon="mdi-bookshelf" prominent
+                title="1. Enregistrer la date et l'heure lors de l'ajout d'une tâche :"
+                text="Lorsque vous ajoutez une nouvelle tâche à la liste, assurez-vous que la date et l'heure actuelles sont également enregistrées avec cette tâche." />
+        </v-col>
+    </v-row>
+</template>
+
+<script setup>
+import TaskInput from "@/components/store/TaskInput.vue";
+</script>
+
