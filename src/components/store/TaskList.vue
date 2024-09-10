@@ -1,5 +1,6 @@
 <template>
-    <div class="d-flex justify-space-between w-100 pa-3 mb-3 rounded-lg item-list"  v-for="(task, index) in store.tasks" :key="index">
+    <div class="d-flex justify-space-between w-100 pa-3 mb-3 rounded-lg item-list" v-for="(task, index) in store.tasks"
+        :key="index">
         <div class="text">
             {{ task }}
         </div>
