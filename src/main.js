@@ -13,8 +13,13 @@ import App from "./App.vue";
 // Composables
 import { createApp } from "vue";
 
-const app = createApp(App);
+import hljs from 'highlight.js';
+import CodeEditor from 'simple-code-editor';
 
+const app = createApp(App);
 registerPlugins(app);
+
+// Enregistrement global du composant
+app.component('CodeEditor', CodeEditor);
 
 app.mount("#app");

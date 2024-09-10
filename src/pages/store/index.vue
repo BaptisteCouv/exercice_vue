@@ -1,7 +1,7 @@
 <template>
   <v-container class="d-flex align-center" fluid>
     <v-row class="d-flex justify-center" no-gutters>
-      <v-col cols="6" class="d-flex flex-column align-center pa-10">
+      <v-col cols="6" class="pa-10">
         <v-row>
           <v-col cols="12">
             <v-alert border="start" color="green-darken-2" icon="$vuetify" prominent
