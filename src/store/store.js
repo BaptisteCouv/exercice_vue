@@ -13,13 +13,5 @@ export const useStoreInStore = defineStore('storeInStore', () => {
     tasks.value.splice(index, 1);
   }
 
-  // GETTERS
-  const displayOldestDate = computed(() => {  
-    if (tasks.value.length === 0) return null;
-    return tasks.value.reduce((oldest, current) => {
-      return new Date(current.dateTask) < new Date(oldest.dateTask) ? current : oldest;
-    });
-  });
-
   return { tasks, addTask, removeTask, displayOldestDate }
 })
