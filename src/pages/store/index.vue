@@ -40,6 +40,7 @@
 <script setup>
 import TaskInput from "@/components/store/TaskInput.vue";
 import TaskList from "@/components/store/TaskList.vue";
+import TaskResponse from "@/components/response/store/TaskResponse.vue";
 
 import { useStore } from "@/store/index.js";
 
