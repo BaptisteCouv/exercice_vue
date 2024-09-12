@@ -1,24 +1,26 @@
 # Installation de CodeWave
 
-J'utilise npm pour instsller le repo etc, donc si jamais vous l'utilisez pas, faite cette comannde :
+J'utilise npm pour installer le repo etc, donc si jamais vous l'utilisez pas, faite cette commande :
 ```bash
 sudo npm install -g npm
 ```
 
-Pour pratiquer les exercices, choisissez un dossier ou mettre le projet, et ensuite il suffit de clone le repo sur votre ordinateur en faisant la commande suivante :
 
+Pour pratiquer les exercices, commencez par choisir un dossier où vous souhaitez placer le projet. Ensuite, il vous suffit de cloner le dépôt sur votre ordinateur en exécutant la commande suivante :
 ```bash
 git clone git@github.com:BaptisteCouv/exercice_vue.git
 ```
-Une fois le clone terminer, aller dans le dossier exercice_vue et installer les packages en faisant la commande suivante :
 
-Si vous avez une erreure lors de l'installation des packages ou lors de lorsque vous lancer l'application, il s peut que se soit la version de nodejs qui soit trop ancinne. il faut une version récente de nodejs.
 
+Une fois le clonage terminé, accédez au dossier exercice_vue et installez les packages en exécutant la commande suivante :
+
+Si vous rencontrez une erreur lors de l'installation des packages ou du lancement de l'application, cela peut être dû à une version de Node.js trop ancienne. Assurez-vous d'avoir une version récente de Node.js.
 ```bash
 npm i
 ```
-Si tous c'est bien passé jusque la, vous avez plus qu'a executer la commande suivante pour lancer l'application, ça va vous générer une url dans la console, cliquez dessus et entrainez-vous bien !
 
+
+Si tout s'est bien passé jusqu'ici, il ne vous reste plus qu'à exécuter la commande suivante pour lancer l'application. Une URL sera générée dans la console : cliquez dessus et amusez-vous bien à vous entraîner !
 ```bash
 npm run dev
 ```
