@@ -1,6 +1,9 @@
 <template>
-    <div class="d-flex justify-space-between w-100 pa-3 mb-3 rounded-lg item-list" v-for="(task, index) in tasksList"
-        :key="index">
+    <div 
+        class="d-flex justify-space-between w-100 pa-3 mb-3 rounded-lg bg-grey-lighten-4 text-grey-darken-3" 
+        
+        v-for="(task, index) in tasksList":key="index"
+    >
         <div class="text">
             {{ task }}
         </div>
@@ -28,8 +31,3 @@ const removeTask = (index) => {
 };
 
 </script>
-<style scoped>
-.item-list {
-    background-color: #2f2f2f;
-}
-</style>
