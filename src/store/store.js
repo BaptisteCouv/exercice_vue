@@ -13,5 +13,7 @@ export const useStoreInStore = defineStore('storeInStore', () => {
     tasks.value.splice(index, 1);
   }
 
-  return { tasks, addTask, removeTask, displayOldestDate }
+  //GETTERS
+
+  return { tasks, addTask, removeTask }
 })

@@ -38,7 +38,7 @@
         </v-col>
         <v-col cols="12">
             <v-alert border="start" color="grey-darken-3" icon="mdi-help" prominent title="Aide :"
-                text="Il suffit d'aller directement dans le " />
+                text="Il suffier d'aller dans la page d'accueil HomePage.vue, et d'appeler le store pour y afficher la liste des tâches. Maintenant on veut filtrer sur la tâche la plus ancienne, il suffit de créer une méthode ou une propriété calculé dans le store et l'afficher dans la page acceuil" />
         </v-col>
         <v-col cols="12">
             <p>Store à mettre dans la page d'accueil HomePage.vue :</p>
