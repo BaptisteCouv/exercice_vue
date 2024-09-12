@@ -29,10 +29,16 @@
     temporary
   >
     <v-list-item
+      class="mt-2"
       prepend-icon="mdi-home"
       title="Maison"
       value="home"
       @click="$router.push('/')"
+    ></v-list-item>
+    <v-list-item
+      prepend-icon="mdi-format-list-numbered"
+      title="Liste des exercices"
+      value="exercice-list"
     ></v-list-item>
     <v-list-item
       prepend-icon="mdi-fruit-pineapple"
