@@ -6,7 +6,6 @@
     ></v-app-bar-nav-icon>
     <v-app-bar-title @click="$router.push('/')" class="cursor-pointer">
       <v-img width="55" src="@/assets/logo-classic.png"></v-img>
-      <!-- {{ store.titleApp }} -->
     </v-app-bar-title>
     <template v-slot:append>
       <v-btn
