@@ -1,7 +1,7 @@
 <template>
   <v-container class="d-flex align-center" fluid>
     <v-row class="d-flex justify-center" no-gutters>
-      <v-col cols="6" class="pa-10">
+      <v-col cols="12" md="12" lg="6" class="pa-10">
         <v-row>
           <v-col cols="12">
             <v-alert border="start" color="green-darken-2" icon="$vuetify" prominent
@@ -27,10 +27,10 @@
         <v-row class="mt-10">
           <h1 class="mb-4">Gestionnaire de tâches</h1>
           <TaskInput />
-          <TaskList />
+          <TaskList :tasksList="store.tasks"/>
         </v-row>
       </v-col>
-      <v-col v-if="store.isSolutionActive" cols="6" class="pa-10">
+      <v-col v-if="storeIndex.isSolutionActive" cols="12" md="12" lg="6" class="pa-10">
         <TaskResponse />
       </v-col>
     </v-row>
@@ -43,6 +43,8 @@ import TaskList from "@/components/store/TaskList.vue";
 import TaskResponse from "@/components/response/store/TaskResponse.vue";
 
 import { useStore } from "@/store/index.js";
+import { useStoreInStore } from '@/store/store';
 
-const store = useStore();
+const store = useStoreInStore();
+const storeIndex = useStore();
 </script>

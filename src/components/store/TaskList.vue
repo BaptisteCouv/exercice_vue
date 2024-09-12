@@ -1,5 +1,5 @@
 <template>
-    <div class="d-flex justify-space-between w-100 pa-3 mb-3 rounded-lg item-list" v-for="(task, index) in store.tasks"
+    <div class="d-flex justify-space-between w-100 pa-3 mb-3 rounded-lg item-list" v-for="(task, index) in tasksList"
         :key="index">
         <div class="text">
             {{ task }}
@@ -14,6 +14,14 @@
 import { useStoreInStore } from '@/store/store';
 
 const store = useStoreInStore();
+
+const props = defineProps({
+    tasksList: {
+        type: Object,
+        require: true,
+    }
+})
+
 
 const removeTask = (index) => {
     store.removeTask(index);

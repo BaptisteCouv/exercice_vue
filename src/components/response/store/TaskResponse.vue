@@ -6,9 +6,6 @@
                 text="Lorsque vous ajoutez une nouvelle tâche à la liste, assurez-vous que la date et l'heure actuelles sont également enregistrées avec cette tâche." />
         </v-col>
         <v-col cols="12">
-            <!-- <v-sheet elevation="4" rounded borde color="grey-darken-3" class="d-flex pa-4">
-                Aide : Il faut se diriger vers le composant qui affiche la liste des tâches, ensuite comprendre le fonctionnement de l'ajout du nom de la tâches dans le store. 
-            </v-sheet> -->
             <v-alert border="start" color="grey-darken-3" icon="mdi-help" prominent title="Aide :"
                 text="Il faut se diriger vers le composant qui affiche la liste des tâches, ensuite comprendre le fonctionnement de l'ajout du nom de la tâches dans le store." />
         </v-col>
@@ -44,6 +41,7 @@
             <p>Store à mettre dans la page d'accueil HomePage.vue :</p>
             <Spoiler>
                 <template #text>
+                    <p class="mb-2">L'exemple si dessous affiche pas la tâche avec le composant TaskList.vue. Mais vous pouvez très bien utiliser le composant TaskList.vue en lui passant en props task.titleTask</p>
                     <CodeEditor width="100%" :copy-code="false" :languages="[['html', 'HTML']]"
                         :value="codeResponseHome"></CodeEditor>
                 </template>
