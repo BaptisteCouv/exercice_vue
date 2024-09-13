@@ -6,6 +6,7 @@
 
 // Plugins
 import { registerPlugins } from "@/plugins";
+import { VTreeview } from 'vuetify/labs/VTreeview'
 
 // Components
 import App from "./App.vue";
@@ -21,5 +22,6 @@ registerPlugins(app);
 
 // Enregistrement global du composant
 app.component('CodeEditor', CodeEditor);
+app.component('VTreeview', VTreeview);
 
 app.mount("#app");

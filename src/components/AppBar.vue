@@ -40,6 +40,12 @@
       value="stores"
       @click="$router.push('/store')"
     ></v-list-item>
+    <v-list-item
+      prepend-icon="mdi-file-tree-outline"
+      title="Treeview"
+      value="treeview"
+      @click="$router.push('/treeview')"
+    ></v-list-item>
   </v-navigation-drawer>
 </template>
 
