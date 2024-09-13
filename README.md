@@ -1,6 +1,6 @@
 # Installation de CodeWave
 
-[Warning]### test
+[Warning](#){.btn .btn-warning}
 
 J'utilise npm pour installer le repo etc, donc si jamais vous l'utilisez pas, faite cette commande :
 ```bash
