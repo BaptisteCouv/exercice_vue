@@ -4,7 +4,7 @@
       <v-col cols="12" class="d-flex justify-center my-4">
         <div>
           <v-img width="300" src="@/assets/logo-hookto.png"></v-img>
-        </div>   
+        </div>
       </v-col>
       <v-col cols="6">
         <v-row>
@@ -44,14 +44,4 @@
       </v-col>
     </v-row>
   </v-container>
-  <!-- <div class="main-title">CodeWave</div> -->
-
 </template>
-
-<style scoped>
-.main-title {
-  font-size: 4rem;
-  display: flex;
-  justify-content: center;
-}
-</style>

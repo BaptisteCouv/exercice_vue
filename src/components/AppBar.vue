@@ -56,8 +56,3 @@ import { useStore } from "@/store/index.js";
 const store = useStore();
 const drawer = ref(false);
 </script>
-<style scoped>
-.btn-header {
-  margin-right: 20px;
-}
-</style>
