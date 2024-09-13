@@ -1,5 +1,7 @@
 # Installation de CodeWave
 
+[Warning]### test
+
 J'utilise npm pour installer le repo etc, donc si jamais vous l'utilisez pas, faite cette commande :
 ```bash
 sudo npm install -g npm
