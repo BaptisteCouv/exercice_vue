@@ -1,6 +1,6 @@
 # Installation de CodeWave
 
-[Warning](#){.btn .btn-warning}
+**Tous les fichiers, composants, etc., qui comportent le mot Response sont les fichiers de réponse aux exercices. Si vous ne voulez pas voir les réponses pour ne pas vous faire spoiler, ne les ouvrez pas.**
 
 J'utilise npm pour installer le repo etc, donc si jamais vous l'utilisez pas, faite cette commande :
 ```bash
