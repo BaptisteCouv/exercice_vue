@@ -2,7 +2,6 @@
   <div class="d-flex w-100">
     <v-text-field
       v-model="newTask"
-      class="txt-field"
       label="Ajouter une tâche"
       variant="outlined"
       @keyup.enter="addTask"
@@ -26,9 +25,3 @@ const addTask = () => {
 };
 
 </script>
-
-<style scoped>
-.txt-field {
-  width: 250px;
-}
-</style>
