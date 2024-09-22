@@ -12,7 +12,7 @@ sudo npm install -g npm
 
 Pour pratiquer les exercices, commencez par choisir un dossier où vous souhaitez placer le projet. Ensuite, il vous suffit de cloner le dépôt sur votre ordinateur en exécutant la commande suivante :
 ```bash
-git clone git@github.com:BaptisteCouv/exercice_vue.git
+git clone https://github.com/BaptisteCouv/exercice_vue.git
 ```
 
 
